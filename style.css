@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+html ,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #378643;
+}
+
+#main #heart {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10vw;
+  animation: pump 0.7s linear infinite alternate-reverse;
+}
+
+@keyframes pump {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: royalblue;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader h1 {
+  font-size: 75px;
+  font-weight: 900;
+  font-family: cursive;
+}
